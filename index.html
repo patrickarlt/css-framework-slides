@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href='style.css' rel='stylesheet' type='text/css' />
+    <script src='big.js'></script>
+    <script src='showdown.js'></script>
+  </head>
+  <body>
+# Patrick Arlt <br>
+Experiance Designer| Portland R&D Center
+
+# ArcGIS CSS Framework
+
+* Spun out of [developers.arcigs.com](http://developers.arcgis.com/)
+* SASS/Compass
+* Design Patterns & Basic Styling
+
+# Requires
+* Ruby 1.9
+* SASS
+* Compass
+
+## Mac
+* Install Ruby with [RVM](https://rvm.io/rvm/install)
+* In your terminal `gem install compass`
+* Copy one of the [examples](https://github.com/ArcGIS/arcgis-for-developers-css/tree/master/examples)
+
+## Windows
+* [RubyInstaller](http://rubyinstaller.org/)
+* In your terminal `gem install compass`
+* Copy one of the [examples](https://github.com/ArcGIS/arcgis-for-developers-css/tree/master/examples)
+
+# Docs or it didn't happen<br>
+[http://arcgis.github.io/arcgis-for-developers-css/](http://arcgis.github.io/arcgis-for-developers-css/)
+
+# Demo Time!
+
+# Roadmap
+* More patterns (I want your patterns)
+* IE7 support (Maybe)
+* Contributors Guide
+
+# Contribute!
+
+# Pull Request<br>
+Get your own copy of the code make changes and ask<br> us (the maintainers) to include your code. [Guide](https://github.com/arcgis/esri-social-coding-project/wiki)
+
+# File Issues<br>
+Download and test the code, file issues, start debates <br>about which patterns to include, ask us to include<br> a patten w/ screenshots or wireframes [Issues](https://github.com/ArcGIS/arcgis-for-developers-css/issues?state=open)
+
+# FAQ
+
+# Can I use this for "Esri Project"?
+
+# YES!
+
+# Can I use this for "My Personal Project"?
+
+# NO!
+
+# Will this be open sourced?
+
+# Probally not
+
+# Why didnt you just use Bootstrap?
+
+# I'll give another talk on that sometime
+
+# Does this style Dojo widgets?
+
+# No but it might
+
+  </body>
+  <script>
+  var converter = new Showdown.converter();
+  var slides = document.body.innerHTML.split("\n\n");
+  document.body.innerHTML = "";
+  for(var i=0; i<slides.length-1; i++) {
+    console.log(i);
+    document.body.innerHTML += "<div>" + converter.makeHtml(slides[i]) + "</div>";
+  }
+  </script>
+</html>
